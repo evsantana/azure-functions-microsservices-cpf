@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Azure Functions",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:azureFunctions.pickProcess}",
+            "pipeTransport": {
+                "pipeProgram": "C:\\Program Files\\Azure Functions Core Tools\\func.exe",
+                "pipeArgs": [],
+                "debuggerPath": "C:\\Program Files\\dotnet\\dotnet.exe",
+                "pipeCwd": "C:\\Program Files\\dotnet\\"
+            }
+        }
+    ]
+}
